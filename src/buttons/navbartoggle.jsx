@@ -1,15 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
-import { FaBars } from "react-icons/fa"; // Example icon for the toggle
+import { FaBars, FaFileAlt } from "react-icons/fa"; // Example icon for the toggle
 import { Link } from "react-router-dom"; // Example for navigation links
-import {
-    AiOutlineHome,
-    AiOutlineUser,
-} from "react-icons/ai";
-import { FaPhone,FaHome } from "react-icons/fa";
+import { FaPhone,FaHome,FaUser } from "react-icons/fa";
 
 function NavbarToggle() {
   const [isOpen, setIsOpen] = useState(false);
-  const [position, setPosition] = useState({ x: 50, y: 50 }); // Initial position set to 50px from the right
+  const [position, setPosition] = useState({ x: 5, y: 0 }); // Initial position set to 50px from the right
   const buttonRef = useRef(null);
 
   useEffect(() => {
@@ -63,7 +59,7 @@ function NavbarToggle() {
         justify-center p-2 rounded-xl
         dark:bg-gray-800 bg-gray-200 
         dark:text-gray-200 text-gray-800 
-        border-2 dark:border-gray-200 border-gray-800"
+        border-2 dark:border-gray-200 border-gray-400"
         >        
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -90,11 +86,11 @@ function NavbarToggle() {
               <ul className="flex flex-col space-y-2">
                 <li>
                   <Link
-                    to="/"
+                    to="/#home"
                     className="flex items-center py-2 px-4 hover:bg-gray-300 dark:hover:bg-gray-700 rounded 
                     border-b-2 dark:border-gray-200 border-gray-400"
                   >
-                    <FaHome className="mr-2" /> Home
+                    <FaHome className="mr-2 text-2xl" /> Home
                   </Link>
                 </li>
                 <li>
@@ -103,16 +99,15 @@ function NavbarToggle() {
                     className="flex items-center py-2 px-4 hover:bg-gray-300 dark:hover:bg-gray-700 rounded
                     border-b-2 dark:border-gray-200 border-gray-400"
                   >
-                    <AiOutlineUser className="mr-2" /> About
+                    <FaUser className="mr-2 text-2xl" /> About
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to="/contact"
+                  <Link to="/" 
                     className="flex items-center py-2 px-4 hover:bg-gray-300 dark:hover:bg-gray-700 rounded
-                    border-b-2 dark:border-gray-200 border-gray-400"
+                    border-b-2 dark:border-gray-200 border-gray-400 scroll-p-1"
                   >
-                    <FaPhone className="mr-2" /> Contact
+                    <FaFileAlt className="mr-2 text-2xl" /> Resume
                   </Link>
                 </li>
               </ul>

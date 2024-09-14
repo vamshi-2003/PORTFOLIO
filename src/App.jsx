@@ -3,6 +3,7 @@ import Home from "./routes/home";
 import About from "./routes/about";
 import DarkModeToggle from "./buttons/darkmodetoggle";
 import DraggableNavbarToggle from "./buttons/navbartoggle";
+import Contacttoggle from "./buttons/contacttoggle";
 import {
   BrowserRouter as Router,
   Route,
@@ -26,6 +27,7 @@ function App() {
       {/* <Preloader load={load} /> */}
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <DraggableNavbarToggle />
+        <Contacttoggle />
         {/* <ScrollToTop /> */}
         <DarkModeToggle />
         <Routes>

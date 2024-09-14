@@ -4,9 +4,10 @@ import Home2 from "./home2";
 import Type from "../components/type";
 
 function Home() {
+  
   return (
     <section>
-      <div className="bg-gray-100 dark:bg-gray-900 py-10" id="about">
+      <div id="home" className="bg-gray-100 dark:bg-gray-900 py-10" id="about">
         <div className="relative z-20 container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-center items-center text-center md:text-left">
             <div className="md:w-1/2 text-black dark:text-white mb-10 md:mb-0">

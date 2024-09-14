@@ -7,7 +7,6 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-
 function Home2() {
   return (
     <div className="bg-gray-200 dark:bg-gray-800 py-10" id="about">
@@ -66,7 +65,7 @@ function Home2() {
             </Tilt>
           </div>
         </div>
-        <div className="text-center mt-10">
+        <div id="contact" className="text-center mt-10">
           <h1 className="text-3xl font-bold text-black dark:text-white">FIND ME ON</h1>
           <p className="text-black dark:text-white mt-4">
             Feel free to <span className="text-purple-800 dark:text-purple-300">connect</span> with me
