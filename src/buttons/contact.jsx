@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaPhone } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import useDraggable from "../hooks/useDraggable"; // Import the custom hook
 
 function ContactToggle() {
-  const { position, elementRef } = useDraggable({ x: 15, y: 15 }); // Use the hook
+  const { position, elementRef } = useDraggable({ x: 25, y: 25 }); // Use the hook
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      // Scroll to the element specified by the hash
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
 
   return (
     <>
@@ -22,7 +33,7 @@ function ContactToggle() {
       >
         <Link
           className="text-2xl display:center md:text-3xl"
-          to="/"
+          to="/#contact" // Updated link with hash
         >
           <FaPhone />
         </Link>

@@ -7,7 +7,7 @@ function DraggableDarkModeToggle() {
   const [darkMode, setDarkMode] = useState(() => {
     return localStorage.getItem("dark-mode") === "true" || false;
   });
-  const { position, elementRef } = useDraggable({ x: '5px', y: '5px' }); // Use the hook
+  const { position, elementRef } = useDraggable({ x: '25px', y: '25px' }); // Use the hook
 
   useEffect(() => {
     if (darkMode) {

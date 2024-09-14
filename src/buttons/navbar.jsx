@@ -5,7 +5,7 @@ import useDraggable from "../hooks/useDraggable"; // Import the custom hook
 
 function NavbarToggle() {
   const [isOpen, setIsOpen] = useState(false);
-  const { position, elementRef } = useDraggable({ x: 5, y: 5 }); // Use the hook
+  const { position, elementRef } = useDraggable({ x: 25, y: 25 }); // Use the hook
 
   return (
     <>
@@ -61,7 +61,7 @@ function NavbarToggle() {
                 </li>
                 <li>
                   <Link
-                    to="/"
+                    to="/resume"
                     className="flex items-center py-2 px-4 hover:bg-gray-300 dark:hover:bg-gray-700 rounded
                       border-b-2 dark:border-gray-200 border-gray-400"
                   >
