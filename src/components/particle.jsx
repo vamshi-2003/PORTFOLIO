@@ -1,28 +1,38 @@
-import React from "react";
-import Particles from "react-tsparticles";
+import React from 'react';
+import Particles from 'react-tsparticles';
 
-function Particle() {
+function Particle({ darkMode }) {
+  const particleColor = darkMode ? '#ffffff' : '#393939'; // Adjust color based on dark mode
+
   return (
     <Particles
       id="tsparticles"
+      className="z-10" // Apply the Tailwind z-index class here
+      style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+      }}
       params={{
         particles: {
           number: {
-            value: 160,
+            value: 300,
             density: {
               enable: true,
               value_area: 1500,
             },
           },
           color: {
-            value:"#ff0000",
+            value: particleColor,
           },
           line_linked: {
             enable: false,
             opacity: 0.03,
           },
           move: {
-            direction: "right",
+            direction: 'right',
             speed: 0.05,
           },
           size: {
@@ -40,7 +50,7 @@ function Particle() {
           events: {
             onclick: {
               enable: true,
-              mode: "push",
+              mode: 'push',
             },
           },
           modes: {
