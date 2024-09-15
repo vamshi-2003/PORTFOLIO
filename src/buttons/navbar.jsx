@@ -3,6 +3,7 @@ import { FaBars, FaFileAlt, FaHome, FaUser } from "react-icons/fa";
 import { Link,useLocation } from "react-router-dom";
 import useDraggable from "../hooks/useDraggable"; // Import the custom hook
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
+import { LiaCertificateSolid } from "react-icons/lia";
 
 function NavbarToggle() {
   const [isOpen, setIsOpen] = useState(false);
@@ -80,6 +81,16 @@ function NavbarToggle() {
               }`}
             >
               <FaFileAlt className="mr-2 text-2xl" /> Resume
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/certification"
+              className={`flex items-center py-2 px-4 rounded border-b-2 ${
+                location.pathname === '/certification' ? 'bg-purple-300 dark:bg-purple-600 border-purple-600 dark:border-purple-300' : 'hover:bg-gray-300 dark:hover:bg-gray-700 border-gray-400'
+              }`}
+            >
+              <LiaCertificateSolid className="mr-2 text-2xl" /> Certification
             </Link>
           </li>
         </ul>

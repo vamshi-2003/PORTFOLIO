@@ -9,10 +9,14 @@ function Github() {
       </h1>
       <GitHubCalendar
         username="vamshi-2003"
-        blockSize={15}
+        blockSize={18}
         blockMargin={5}
         color="#c084f5"
-        fontSize={16}
+        fontSize={20}
+        theme={{
+          light: ["#ebedf0", "#e4c1f9", "#c084f5", "#9a4ef0", "#6b23ff"], // Shades of purple for light theme
+    dark: ["#1e1e1e", "#4b0082", "#6b23ff", "#9a4ef0", "#c084f5"] // 5 colors for dark theme
+        }}
       />
     </div>
   );

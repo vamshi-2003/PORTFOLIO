@@ -2,12 +2,13 @@ import React, { useState, useEffect } from "react";
 import Home from "./routes/home";
 import About from "./routes/about";
 import Projects from "./routes/projects";
+import Resume from "./routes/resume";
+import Certification from "./routes/certification";
 import Preloader from "./components/Pre";
 import DarkModeToggle from "./buttons/darkmodetoggle";
 import DraggableNavbarToggle from "./buttons/navbar";
 import Contacttoggle from "./buttons/contact";
 import Hometoggle from "./buttons/hometoggle";
-import Resume from "./routes/resume";
 import ScrollToTop from "./components/ScrollToTop";
 import {
   BrowserRouter as Router,
@@ -41,6 +42,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/certification" element={<Certification />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
       </div>
