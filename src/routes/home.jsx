@@ -39,6 +39,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <hr className=" border-t-4 border-gray-300 dark:border-gray-700" />
       <Home2 />
     </section>
   );

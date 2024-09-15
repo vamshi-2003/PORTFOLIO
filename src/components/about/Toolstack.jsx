@@ -1,4 +1,5 @@
 import React from "react";
+import { FaKaggle } from "react-icons/fa";
 import {
   SiVisualstudiocode,
   SiSlack,
@@ -6,6 +7,7 @@ import {
   SiInsomnia,
   SiLinux,
   SiGithub,
+  SiKaggle,
 } from "react-icons/si";
 
 function Toolstack() {
@@ -38,6 +40,10 @@ function Toolstack() {
       <div className={containerClasses}>
         <SiGithub />
         <span className={labelClasses}>Github</span>
+      </div>
+      <div className={containerClasses}>
+        <FaKaggle />
+        <span className={labelClasses}>Kaggle</span>
       </div>
     </div>
   );
