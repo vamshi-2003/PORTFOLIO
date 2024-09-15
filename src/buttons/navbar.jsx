@@ -47,7 +47,7 @@ function NavbarToggle() {
             <Link
               to="/"
               className={`flex items-center py-2 px-4 rounded border-b-2 ${
-                location.pathname === '/' ? 'bg-purple-300 dark:bg-purple-600 border-purple-600 dark:border-purple-300' : 'hover:bg-gray-300 dark:hover:bg-gray-700 border-gray-400'
+                location.pathname === '/' ? 'bg-purple-300 dark:bg-purple-700 border-purple-600 dark:border-purple-400' : 'hover:bg-gray-300 dark:hover:bg-gray-700 border-gray-400'
               }`}
             >
               <FaHome className="mr-2 text-2xl" /> Home
@@ -57,7 +57,7 @@ function NavbarToggle() {
             <Link
               to="/about"
               className={`flex items-center py-2 px-4 rounded border-b-2 ${
-                location.pathname === '/about' ? 'bg-purple-300 dark:bg-purple-600 border-purple-600 dark:border-purple-300' : 'hover:bg-gray-300 dark:hover:bg-gray-700 border-gray-400'
+                location.pathname === '/about' ? 'bg-purple-300 dark:bg-purple-700 border-purple-600 dark:border-purple-400' : 'hover:bg-gray-300 dark:hover:bg-gray-700 border-gray-400'
               }`}
             >
               <FaUser className="mr-2 text-2xl" /> About
@@ -67,7 +67,7 @@ function NavbarToggle() {
             <Link
               to="/projects"
               className={`flex items-center py-2 px-4 rounded border-b-2 ${
-                location.pathname === '/projects' ? 'bg-purple-300 dark:bg-purple-600 border-purple-600 dark:border-purple-300' : 'hover:bg-gray-300 dark:hover:bg-gray-700 border-gray-400'
+                location.pathname === '/projects' ? 'bg-purple-300 dark:bg-purple-700 border-purple-600 dark:border-purple-400' : 'hover:bg-gray-300 dark:hover:bg-gray-700 border-gray-400'
               }`}
             >
               <AiOutlineFundProjectionScreen className="mr-2 text-2xl" /> Projects
@@ -77,7 +77,7 @@ function NavbarToggle() {
             <Link
               to="/resume"
               className={`flex items-center py-2 px-4 rounded border-b-2 ${
-                location.pathname === '/resume' ? 'bg-purple-300 dark:bg-purple-600 border-purple-600 dark:border-purple-300' : 'hover:bg-gray-300 dark:hover:bg-gray-700 border-gray-400'
+                location.pathname === '/resume' ? 'bg-purple-300 dark:bg-purple-700 border-purple-600 dark:border-purple-400' : 'hover:bg-gray-300 dark:hover:bg-gray-700 border-gray-400'
               }`}
             >
               <FaFileAlt className="mr-2 text-2xl" /> Resume
@@ -87,7 +87,7 @@ function NavbarToggle() {
             <Link
               to="/certification"
               className={`flex items-center py-2 px-4 rounded border-b-2 ${
-                location.pathname === '/certification' ? 'bg-purple-300 dark:bg-purple-600 border-purple-600 dark:border-purple-300' : 'hover:bg-gray-300 dark:hover:bg-gray-700 border-gray-400'
+                location.pathname === '/certification' ? 'bg-purple-300 dark:bg-purple-700 border-purple-600 dark:border-purple-300' : 'hover:bg-gray-300 dark:hover:bg-gray-700 border-gray-400'
               }`}
             >
               <LiaCertificateSolid className="mr-2 text-2xl" /> Certification
