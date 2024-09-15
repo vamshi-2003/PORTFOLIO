@@ -6,7 +6,7 @@ import blog from "../assets/blog.png";
 function Projects() {
   return (
     <div className="z-10relative text-center bg-gray-100 dark:bg-gray-900 text-black dark:text-white pt-[150px] pb-[30px] bg-[var(--section-background-color)]">
-      <div className="container mx-auto items-center px-12 md:px-0">
+      <div className="container mx-auto items-center px-4 md:px-0">
         <h1 className="text-[2.3em] font-medium pt-[10px]">
           My Recent <strong className="text-purple-800 dark:text-purple-300">Works</strong>
         </h1>
