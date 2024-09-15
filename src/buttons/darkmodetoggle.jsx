@@ -35,7 +35,7 @@ function DraggableDarkModeToggle() {
           zIndex: 30,
         }}
         className="w-[50px] h-[50px] flex items-center justify-center p-2 rounded-xl
-          dark:bg-gray-800 bg-gray-200 dark:text-gray-200 text-gray-800 border-2 dark:border-gray-200 border-gray-400"
+          dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 bg-gray-200 dark:text-gray-200 text-gray-800 border-2 dark:border-gray-200 border-gray-400"
       >
         <button
           onClick={toggleDarkMode}

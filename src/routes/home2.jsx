@@ -10,7 +10,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 function Home2() {
   return (
     <div className="bg-gray-200 dark:bg-gray-800 py-10" id="about">
-      <div className="relative z-20 container mx-auto px-4">
+      <div className="relative z-20 container mx-auto px-4 md:px-32">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="md:w-2/3 text-black dark:text-white mb-10 md:mb-0">
             <h1 className="text-4xl font-bold">
