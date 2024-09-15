@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import { AiOutlineDownload } from "react-icons/ai";
-import pdf from "../assets/vamshi_resume.pdf";
+import pdf from "../assets/vamshi_resume__2_.pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 
 // Set the workerSrc to the correct path for pdfjs-dist version
