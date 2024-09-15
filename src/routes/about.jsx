@@ -9,7 +9,7 @@ function About() {
   return (
     <div className="z-10relative py-16 bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-200">
       <div className="container ">
-        <div className=" mx-auto px-5 md:px-40">
+        <div className="px-5 md:px-20 lg:px-40">
             
           <div className="flex flex-col md:flex-row items-center justify-center py-8">
             <div className="md:w-7/12 flex flex-col items-center md:items-start  md:text-left py-8">

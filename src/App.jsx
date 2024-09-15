@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Home from "./routes/home";
 import About from "./routes/about";
+import Projects from "./routes/projects";
 import Preloader from "./components/Pre";
 import DarkModeToggle from "./buttons/darkmodetoggle";
 import DraggableNavbarToggle from "./buttons/navbar";
@@ -37,7 +38,7 @@ function App() {
         <DarkModeToggle />
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/project" element={<Projects />} /> */}
+          <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/"/>} />

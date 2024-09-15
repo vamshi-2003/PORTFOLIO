@@ -1,109 +1,76 @@
 import React from "react";
-import { CgCPlusPlus } from "react-icons/cg";
-import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiPython,
-  DiGit,
-  DiJava,
-} from "react-icons/di";
+import { FaJava, FaNode } from "react-icons/fa";
 import {
   SiRedis,
   SiFirebase,
   SiNextdotjs,
   SiSolidity,
   SiPostgresql,
+  SiCplusplus,
+  SiJavascript,
+  SiReact,
+  SiMongodb,
+  SiGit,
+  SiPython,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
-
 function Techstack() {
+  // Define reusable className variables for the container and label
+  const containerClasses = "relative group flex items-center justify-center p-4 text-7xl m-4 opacity-90 border-4 border-gray-600 dark:border-gray-300 rounded-md shadow-md align-middle text-center transition-all duration-400";
+  const labelClasses = "absolute bottom-0 mb-8 px-4 py-2 md:text-md text-2xl text-white bg-gray-800 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300";
+
   return (
-    <div className="grid grid-cols-2 md:grid-cols-5 gap-4 justify-center pb-12">
-      <div className="flex items-center justify-center 
-           p-4 text-7xl m-4  opacity-90
-           border-2 border-purple-600 dark:border-purple-300 
-           rounded-md shadow-md align-middle text-center transition-all duration-400 ">
-        <CgCPlusPlus className="text-7xl" />
+    <div className="text-purple-800 dark:text-purple-300 grid grid-cols-2 lg:grid-cols-5 md:grid-cols-3 gap-4 justify-center pb-12">
+      <div className={containerClasses}>
+        <SiCplusplus />
+        <span className={labelClasses}>C++</span>
       </div>
-      <div className="flex items-center justify-center 
-           p-4 text-7xl m-4  opacity-90
-           border-2 border-purple-600 dark:border-purple-300 
-           rounded-md shadow-md align-middle text-center transition-all duration-400 ">
-        <DiJavascript1 className="text-7xl" />
+      <div className={containerClasses}>
+        <SiJavascript />
+        <span className={labelClasses}>JavaScript</span>
       </div>
-      <div className="flex items-center justify-center 
-           p-4 text-7xl m-4  opacity-90
-           border-2 border-purple-600 dark:border-purple-300 
-           rounded-md shadow-md align-middle text-center transition-all duration-400 ">
-        <TbBrandGolang className="text-7xl" />
+      <div className={containerClasses}>
+        <FaNode />
+        <span className={labelClasses}>Node.js</span>
       </div>
-      <div className="flex items-center justify-center 
-           p-4 text-7xl m-4  opacity-90
-           border-2 border-purple-600 dark:border-purple-300 
-           rounded-md shadow-md align-middle text-center transition-all duration-400 ">
-        <DiNodejs className="text-7xl" />
+      <div className={containerClasses}>
+        <SiReact />
+        <span className={labelClasses}>React</span>
       </div>
-      <div className="flex items-center justify-center 
-           p-4 text-7xl m-4  opacity-90
-           border-2 border-purple-600 dark:border-purple-300 
-           rounded-md shadow-md align-middle text-center transition-all duration-400 ">
-        <DiReact className="text-7xl" />
+      <div className={containerClasses}>
+        <SiSolidity />
+        <span className={labelClasses}>Solidity</span>
       </div>
-      <div className="flex items-center justify-center 
-           p-4 text-7xl m-4  opacity-90
-           border-2 border-purple-600 dark:border-purple-300 
-           rounded-md shadow-md align-middle text-center transition-all duration-400 ">
-        <SiSolidity className="text-7xl" />
+      <div className={containerClasses}>
+        <SiMongodb />
+        <span className={labelClasses}>MongoDB</span>
       </div>
-      <div className="flex items-center justify-center 
-           p-4 text-7xl m-4  opacity-90
-           border-2 border-purple-600 dark:border-purple-300 
-           rounded-md shadow-md align-middle text-center transition-all duration-400 ">
-        <DiMongodb className="text-7xl" />
+      <div className={containerClasses}>
+        <SiNextdotjs />
+        <span className={labelClasses}>Next.js</span>
       </div>
-      <div className="flex items-center justify-center 
-           p-4 text-7xl m-4  opacity-90
-           border-2 border-purple-600 dark:border-purple-300 
-           rounded-md shadow-md align-middle text-center transition-all duration-400 ">
-        <SiNextdotjs className="text-7xl" />
+      <div className={containerClasses}>
+        <SiGit />
+        <span className={labelClasses}>Git</span>
       </div>
-      <div className="flex items-center justify-center 
-           p-4 text-7xl m-4  opacity-90
-           border-2 border-purple-600 dark:border-purple-300 
-           rounded-md shadow-md align-middle text-center transition-all duration-400 ">
-        <DiGit className="text-7xl" />
+      <div className={containerClasses}>
+        <SiFirebase />
+        <span className={labelClasses}>Firebase</span>
       </div>
-      <div className="flex items-center justify-center 
-           p-4 text-7xl m-4  opacity-90
-           border-2 border-purple-600 dark:border-purple-300 
-           rounded-md shadow-md align-middle text-center transition-all duration-400 ">
-        <SiFirebase className="text-7xl" />
+      <div className={containerClasses}>
+        <SiRedis />
+        <span className={labelClasses}>Redis</span>
       </div>
-      <div className="flex items-center justify-center 
-           p-4 text-7xl m-4  opacity-90
-           border-2 border-purple-600 dark:border-purple-300 
-           rounded-md shadow-md align-middle text-center transition-all duration-400 ">
-        <SiRedis className="text-7xl" />
+      <div className={containerClasses}>
+        <SiPostgresql />
+        <span className={labelClasses}>PostgreSQL</span>
       </div>
-      <div className="flex items-center justify-center 
-           p-4 text-7xl m-4  opacity-90
-           border-2 border-purple-600 dark:border-purple-300 
-           rounded-md shadow-md align-middle text-center transition-all duration-400 ">
-        <SiPostgresql className="text-7xl" />
+      <div className={containerClasses}>
+        <SiPython />
+        <span className={labelClasses}>Python</span>
       </div>
-      <div className="flex items-center justify-center 
-           p-4 text-7xl m-4  opacity-90
-           border-2 border-purple-600 dark:border-purple-300 
-           rounded-md shadow-md align-middle text-center transition-all duration-400 ">
-        <DiPython className="text-7xl" />
-      </div>
-      <div className="flex items-center justify-center 
-           p-4 text-7xl m-4  opacity-90
-           border-2 border-purple-600 dark:border-purple-300 
-           rounded-md shadow-md align-middle text-center transition-all duration-400 ">
-        <DiJava className="text-7xl" />
+      <div className={containerClasses}>
+        <FaJava />
+        <span className={labelClasses}>Java</span>
       </div>
     </div>
   );
