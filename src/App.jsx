@@ -29,7 +29,7 @@ function App() {
   }, []);
 
   return (
-    <Router  basename="/portfolio/">
+    <Router  basename="/PORTFOLIO/">
       <Preloader load={load} />
       <div className="App overflow-hidden" id={load ? "no-scroll" : "scroll"}>
         <DraggableNavbarToggle />
