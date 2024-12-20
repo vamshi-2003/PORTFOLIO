@@ -29,7 +29,7 @@ function App() {
   }, []);
 
   return (
-    <Router  basename="/PORTFOLIO/">
+    <Router  basename="/vamshi-2003.github.io/">
       <Preloader load={load} />
       <div className="App overflow-hidden" id={load ? "no-scroll" : "scroll"}>
         <DraggableNavbarToggle />
